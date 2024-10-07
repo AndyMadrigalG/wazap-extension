@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Country Code Selector</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+    }
+    select, input, button {
+      margin: 5px 0;
+      padding: 5px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h3>Select Country Code</h3>
+  <select id="countryCode">
+    <option value="+1">+1 (USA)</option>
+    <option value="+44">+44 (UK)</option>
+    <option value="+91">+91 (India)</option>
+    <!-- Add more country codes as needed -->
+  </select>
+  <input type="text" id="phoneNumber" placeholder="Enter phone number">
+  <button id="submitBtn">OK</button>
+  <script src="popup.js"></script>
+</body>
+</html>
