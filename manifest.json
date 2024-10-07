@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Wazzap Extension",
+    "version": "1.0",
+    "description": "Select a country code and enter a phone number to open a new tab and messasge the number without adding it to your contacts",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "WAZZAP.png",
+        "48": "WAZZAP.png",
+        "128": "WAZZAP.png"
+      }
+    },
+    "permissions": [
+      "activeTab"
+    ]
+  }
