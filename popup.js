@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
   const phoneNumberInput = document.getElementById('phoneNumber');
 
@@ -16,4 +17,4 @@ document.getElementById('submitBtn').addEventListener('click', function() {
     const fullNumber = countryCode + phoneNumber;
     const newUrl = `https://web.whatsapp.com/send/?phone=${encodeURIComponent(fullNumber)}`;
     chrome.tabs.create({ url: newUrl });
-  });
+});
