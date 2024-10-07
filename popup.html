@@ -1,30 +1,57 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Wazzap Extension</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 10px;
-    }
-    select, input, button {
-      margin: 5px 0;
-      padding: 5px;
-      width: 100%;
-    }
-  </style>
-</head>
-<body>
-  <h3>Select Country Code</h3>
-  <select id="countryCode">    
-    <option value="+506">+506 (Costa Rica)</option>
-    <option value="+1">+1 (USA)</option>
-    <option value="+44">+44 (UK)</option>
-    <option value="+91">+91 (India)</option>
-    <!-- Need more work to add all country codes from list -->
-  </select>
-  <input type="text" id="phoneNumber" placeholder="Enter phone number">
-  <button id="submitBtn">OK</button>
-  <script src="popup.js"></script>
-</body>
+  <head>
+    <title>Wazzap Extension</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+      }
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+      }
+      select, input, button {
+        margin: 10px 0;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      input[type="text"] {
+        width: calc(100% - 20px); /* Adjust the width to be a little shorter */
+      }
+      button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Select Country Code</h3>
+      <select id="countryCode">    
+        <option value="+506">+506 (Costa Rica)</option>
+        <option value="+1">+1 (USA)</option>
+        <option value="+44">+44 (UK)</option>
+        <option value="+91">+91 (India)</option>
+        <!-- Need more work to add all country codes from list -->
+      </select>
+      <input type="text" id="phoneNumber" placeholder="Enter phone number">
+      <button id="submitBtn">OK</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
 </html>
